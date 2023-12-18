@@ -1,0 +1,17 @@
+.screens{
+    /* max-width: 1900px; */
+    margin: 10px auto;
+    position: absolute;
+    z-index: 2;
+   transform: translateX(52%);
+    /* bottom: 0; */
+    top: 0;
+    
+    /* overflow-y: hidden; */
+
+}
+/* @media screen and (min-width: 1100x) {
+    .screens{
+    transform: translateY(-60rem);;
+    }
+  } */

@@ -1,0 +1,11 @@
+.screens{
+    position: relative;
+    z-index: 2;
+    transform:translateY(-38.3rem);
+
+}
+@media screen and (min-width: 1100x) {
+    .screens{
+    transform: translateY(-60rem);;
+    }
+  }

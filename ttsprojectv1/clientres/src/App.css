@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-sec {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire section */
+}
+
+form.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white; /* Set a background color for the form */
+  border-radius: 10px; /* Optional: Add some border-radius for a rounded look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+form.login h1 {
+  margin: 10px 0px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-button {
+  width: 100%;
+  cursor: pointer;
+  /* background: linear-gradient(to right, #574b90, #c683d7); */
+  background-color: #A04E96;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  
+}
+
+.login-button:hover {
+  background: #574b90;
+}
+
+/* headers css */
+
+.navbar{
+  width: 90%;
+  display:  flex;
+  height:15px;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  color: #a639c1;
+  
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+.logo-container h2{
+  color: #7c2991;
+  font-weight: 900;
+  cursor: pointer;
+}
+.logo-container p{
+  transform: translateY(5px);
+  font-weight: bold;
+}
+.navbar .logo{
+  width: 150px;
+  cursor: pointer;
+
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-links a{
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: .08rem;
+  color: #902ba9;
+}
+main {
+  height: 65vh;
+  width: 100%;
+  margin: 50px auto;
+  background: #6b1d81;
+  
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+/* @media screen and (min-width: 1100px) {
+  main{
+    height: 60vh;
+    width: 80%;
+  }
+} */
+  
+
+.index-heading{
+  color: white;
+  margin: auto 40px;
+  transform: translateY(10px);
+}
+main .textarea {
+width: 90%;
+margin:40px 40px;
+min-height: 200px;
+border-radius: 20px;
+padding-left: 15px;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+padding-top: 10px;
+padding-right: 15px;
+border-color: #a639c1;
+/* margin-bottom: 50px; */
+
+}
+main .textarea:focus-visible{
+  outline-color: #a639c1;
+}
+main .tts-container h3{
+  color: white;
+  margin: auto 40px;
+}
+.slider{
+  -webkit-appearance: none;
+  width: 90%;
+  height: 1px;
+  margin: 0 auto;
+  background: #a639c1;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 1px 10px 1px black;
+  
+}
+.slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
+
+.controls{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.control{
+  /* display: flex; */
+  align-items: center; 
+  color: white;
+  font-weight: 800;
+  letter-spacing: .05rem;
+  margin: 10px auto;
+
+}
+
+.controls .translitiration p{
+  transform: translateY(-6px);
+  
+  margin-left: 10px;
+  
+}
+
+.custom-audio-controls {
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  width: 90%; 
+  transform: translateY(-15px);
+}
+
+
+/* Style the play/pause button */
+.play-pause {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the progress bar container */
+.progress-bar {
+  width: 100%; 
+  height: 10px;
+  background-color: #ddd;
+  margin-left: 10px;
+}
+
+/* Style the progress indicator (filled portion) */
+.progress-indicator {
+  height: 100%;
+  width: 0;
+  background-color: #4CAF50;}
+  .audiobtn{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .audiobtn button{
+    color: white;
+    background-color:   #7d3c98;
+    width: 400px;
+    padding: 15px;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+  .audiobtn button:hover{
+    width: 450px;
+    background-color:#9a4bbc ;
+  }
+
+/* ----------------------------------------------------------------------------------------------------- */
+  
